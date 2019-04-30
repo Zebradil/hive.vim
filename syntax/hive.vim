@@ -3,9 +3,9 @@
 " Maintainer: German Lashevich <german.lashevich@gmail.com>
 " Last Change: 2019-04-30
 
-"if exists("b:current_syntax")
-"  finish
-"endif
+if exists("b:current_syntax")
+  finish
+endif
 
 syn case ignore
 
