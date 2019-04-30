@@ -73,8 +73,16 @@ syn region sqlString  start=+"+  skip=+\\\\\|\\"+  end=+"+
 syn region sqlString  start=+'+  skip=+\\\\\|\\'+  end=+'+
 
 " Numbers:
-syn match sqlNumber  "-\=\<\d*\.\=[0-9_]\>"
+syn match sqlNumber  "-\=\<\d\+\>"
 syn match sqlNumber  "-\=\<\d\+[ISL]\=\>"
+" Floating point number with decimal no E or e
+syn match celNumber '[-+]\d\+\.\d*'
+" Floating point like number with E and no decimal point (+,-)
+syn match celNumber '[-+]\=\d[[:digit:]]*[eE][\-+]\=\d\+'
+syn match celNumber '\d[[:digit:]]*[eE][\-+]\=\d\+'
+" Floating point like number with E and decimal point (+,-)
+syn match celNumber '[-+]\=\d[[:digit:]]*\.\d*[eE][\-+]\=\d\+'
+syn match celNumber '\d[[:digit:]]*\.\d*[eE][\-+]\=\d\+'
 
 " Comments:
 syn region sqlComment    start="/\*"  end="\*/" contains=sqlTodo
