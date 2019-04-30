@@ -28,6 +28,33 @@ syn keyword sqlKeyword keys extended textfile location distribute directory tabl
 syn keyword sqlKeyword case when database serde serdeproperties inputformat outputformat over
 syn keyword sqlKeyword unbounded preceding parquet tblproperties
 
+syn keyword sqlKeyword dmin after archive before bucket cascade change
+syn keyword sqlKeyword lusterstatus columns compact compactions compute
+syn keyword sqlKeyword oncatenate continue databases datetime dbproperties
+syn keyword sqlKeyword eferred defined dependency directories disable elem_type
+syn keyword sqlKeyword nable escaped export fileformat first formatted
+syn keyword sqlKeyword unctions hold_ddltime idxproperties ignore indexes
+syn keyword sqlKeyword nputdriver jar key_type lines locks logical long mapjoin
+syn keyword sqlKeyword aterialized metadata noscan no_drop outputdriver owner
+syn keyword sqlKeyword artitions plus pretty principals protection purge read
+syn keyword sqlKeyword eadonly rebuild recordreader recordwriter reload replace
+syn keyword sqlKeyword eplication restrict rewrite role roles schema schemas
+syn keyword sqlKeyword emi server sets shared show show_database skewed sort
+syn keyword sqlKeyword sl statistics streamtable tables temporary touch
+syn keyword sqlKeyword ransactions unarchive undo uniontype unlock unset
+syn keyword sqlKeyword nsigned uri utc utctimestamp value_type while
+syn keyword sqlKeyword uthorization both by conf cube current_timestamp
+syn keyword sqlKeyword xchange fetch following group grouping import interval
+syn keyword sqlKeyword ess macro more none order partialscan percent preserve
+syn keyword sqlKeyword ange reads rollup uniquejoin utc_tmestamp autocommit
+syn keyword sqlKeyword solation offset snapshot transaction work write only
+syn keyword sqlKeyword bort key last norely novalidate nulls rely cache
+syn keyword sqlKeyword onstraint foreign primary references detail dow
+syn keyword sqlKeyword xpression operator quarter summary vectorization week
+syn keyword sqlKeyword ears months weeks days hours minutes seconds dayofweek
+syn keyword sqlKeyword xtract integer precision views timestamptz zone time
+syn keyword sqlKeyword umeric sync
+
 syn match sqlKeyword 'group\s\+by'
 syn match sqlKeyword 'order\s\+by'
 
